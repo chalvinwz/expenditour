@@ -5,7 +5,7 @@ type Data = {
 }
 
 async function getData() {
-	const res = await fetch(`${process.env.HOSTS}/api/hello`)
+	const res = await fetch('http://localhost:3000/api/hello')
 
 	if (!res.ok) {
 		throw new Error('Failed to fetch data')
